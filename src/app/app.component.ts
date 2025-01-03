@@ -25,5 +25,12 @@ export class AppComponent {
       console.log('subscriber using from', data);
       this.data = data;
     });
+
+    const users = [
+      { id: 1, name: 'Bob', age: 30 },
+      { id: 2, name: 'Jack', age: 40 },
+      { id: 3, name: 'Maria', age: 42 },
+    ];
+    const user$ = of(users);
   }
 }
